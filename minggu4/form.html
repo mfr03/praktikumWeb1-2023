@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .someBodyOnceToldMe
+        {   
+            height: 100vh;
+            background: linear-gradient(#fefefe 0%,#fefefe 55%,#eff6fe 55%,
+            #eff6fe 100%);
+        }
+        .center
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .fieldset1
+        {   
+            height:auto;
+        }
+        .form1
+        {
+            height:65vh;
+            margin-left: 5%;
+        }
+        .formGrid1 
+        {
+            display: grid;
+            grid: 25% / 45% 45%;
+            gap: 5%;
+        }
+        .formGrid2
+        {
+            display: grid;
+            grid: 25% / 95%;
+        }
+        .formItem{
+            resize:horizontal;
+            width: 100%;
+            font-size: 15pt;
+        }
+        .padd
+        {
+            padding-top: 5vh;
+        }
+        .img1
+        {
+            padding-bottom: 5vh;
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="someBodyOnceToldMe">
+    <div class="padd"></div>
+    <img src="maling.png" class="img1 center">
+    <fieldset class="fieldset1 center">
+        <legend>
+            Form Kirim Pos
+        </legend>
+        <form class="form1" >
+            <grid class="formGrid1">
+                <div>
+                    <p>Nama depan</p>
+                    <input class="formItem" type="text" name="firstName" placeholder="Nama Depan">
+                </div>
+                <div>
+                    <p>Nama Belakang</p>
+                    <input class="formItem" type="text" name="lastName" placeholder="Nama Belakang">
+                </div>
+            </grid>
+            <grid class="formGrid2">
+                <div>
+                    <p>Nama Tujuan</p>
+                    <input class="formItem" type="text" name="tName" placeholder="Nama Tujuan">
+                </div>
+                <div>
+                    <p>Kode Pos Tujuan</p>
+                    <input class="formItem" type="text" name="kdPos" placeholder="Kode Pos">
+                </div>
+                <div>
+                    <p>Lokasi Tujuan</p>
+                    <input class="formItem" type="text" name="lTujuan" placeholder="Lokasi">
+                </div>
+                <div>
+                    <p>Nomer HP</p>
+                    <input class="formItem" type="text" name="PNumber" placeholder="no HP">
+                </div>
+                <div>
+                    <br>
+                    <input class="formItem" type="button" value="helloUwU"
+                    style="background-color: aqua; border: 0px; font-size: 20pt;">
+                </div>
+            </grid>
+        </form>
+    </fieldset>
+</body>
+</html>
