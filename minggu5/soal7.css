@@ -1,0 +1,132 @@
+*
+{   
+    margin: 0px;
+    padding: 0px;
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+}
+
+
+.navbar 
+{
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.navbar > ul
+{
+    list-style-type: none;
+    height: 100%;
+    margin-left: 30vw;
+}
+
+li {float: left;}
+  
+li a 
+{
+    margin-right: 8vw;
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+    font-weight: 750;
+}
+  
+.navbar > img
+{   
+    position: relative;
+    top: -50%;
+    right: -80%;
+}
+
+.flexCenter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexContainer 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.welcomePage
+{   
+    background: url("src/2-3.jpg") scroll no-repeat;
+    height: 104vh;
+}
+
+.welcomeUser
+{   
+    top:40%;
+    position: relative;
+    right: -10%;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    color:aliceblue
+}
+
+.welcomeUser > p
+{
+    margin:1vh 0 1vh 0;
+    
+}
+.blogPost
+{   
+    background: rgb(20,85,205);
+    background: linear-gradient(180deg, rgba(20,85,205,1) 10%, rgba(255,255,255,1) 100%);
+    height:100vh;
+    flex-direction: column;
+}
+.blogHeader
+{   
+    position: relative;
+    top:-15%;
+    font-size: 25px;
+    font-weight: 750;   
+    text-align: center;
+    color: #ffffff;
+}
+
+.blogContent
+{   
+    text-align: justify;
+    position: relative;
+    top:-5%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: inset;
+    height: 40vh;
+    width: 90vw;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.blogContent .title
+{
+    text-align: center;
+}
+
+#foot
+{
+    height:15vh;
+    
+}
+
+#foot > div
+{   
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    border-top: 1px solid #333;
+}
+
