@@ -1,0 +1,122 @@
+.attribution 
+{ 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 5vh;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@font-face
+{
+    font-family: Manrope;
+    src: url("Manrope-VariableFont_wght.ttf");
+}
+
+*
+{
+    font-family: Manrope;
+}
+
+body
+{
+    height: 60%;
+    max-width: 80%;
+    background: hsl(213, 44%, 95%)
+}
+
+.outer-flex
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.parent-flex
+{   
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 60%;
+    max-width: 60vw;
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.parent-grid
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 60%;
+    width: auto;
+    max-width: 60vw;
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.marginer
+{
+    height: 100%;
+    width: 100%;
+}
+
+.parent2-flex
+{   
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 55vw;
+}
+
+.parent2-flex > .headings
+{   
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.parent2-flex > .notheadings
+{
+    font-weight: 500;
+    font-size: 13px;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.parent3-flex
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Assets */
+
+.img1-drawer
+{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.img2-michelle
+{
+    border-radius: 100%;
+    height: 50px;
+}
+
+/* Utility */
+
+.center
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
