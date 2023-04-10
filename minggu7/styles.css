@@ -1,0 +1,129 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    font-family: 'EB Garamond', serif;
+    overflow-x: hidden;
+}
+
+#logo
+{
+    width:256px;
+    height:auto;
+}
+#showImage
+{
+    width:80%;
+}
+.center
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+body > div
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+nav
+{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+nav > ul
+{
+    list-style: none;
+}
+
+nav > ul > li
+{
+    display: inline;
+    font-size: 1.5em;
+}
+
+.currentPage
+{
+    color:#8bdcc4;
+    border-bottom: 1px solid #8bdcc4;
+    padding-bottom: 3px;
+}
+.centerGrid
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 25px;
+
+}
+
+.breakline
+{
+    width:100%;
+    border-bottom: 1px solid gainsboro;
+}
+.breaklineT
+{
+    width:100vw;
+}
+
+.posts
+{
+    display: flex;
+    flex-direction: column;
+    gap: 25px 25px;
+}
+
+.post
+{
+    min-width: 100%;
+    border: 1px solid gainsboro;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    min-height: 40%;
+}
+
+.post > div > h3
+{
+    font-size: 1.5em;
+}
+
+.post > div > p
+{
+    text-align: justify;
+    padding-right: 10px;
+    font-size: 1.5em;
+}
+
+.post > img
+{
+    width: 10vw;
+    height:10vw;
+    margin:10px;
+}
+#blogs
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+#blogs > img
+{
+    max-width: 100%;
+}
+#blogs > h3
+{
+    margin-top: -15px;
+    font-size: 1.5em;
+
+}
+.one
+{
+    margin-top: -25px;
+}
