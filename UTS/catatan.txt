@@ -1,0 +1,12 @@
+flex-direction: row; menambahkan flex-direction row
+.cta{} membuat cta menjadi class
+menambahkan class container pertama
+menambahkan gambar ke gambar 4
+<a href="#" id="blue" class="cta">Beli Sekarang</a>
+menambahkan id kepada button di gambar 4
+menghapus div tambahan di akhir container gambar 5 dan 6
+menghapus div tambahan di akhir container gambar 7 dan 8
+menghapus gambar dobel pada gambar 8
+menambah display: block; pada .box img
+membenarkan type nav ul ul lu menjadi nav ul ul ul
+menambahkan kontak
