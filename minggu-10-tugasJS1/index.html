@@ -351,12 +351,29 @@
     </script>
 
     <script>
+        var isTextArea = false;
+
         function call()
-        {
+        {   
+
             var alignParagraph = document.getElementById("alignParagraph");
-            var otherParagraph = document.getElementById("kickstartParagraph")
-            alignParagraph.innerHTML = otherParagraph.innerText;
+            var otherParagraph = document.getElementById("kickstartParagraph");
+
+            if(isTextArea)
+            {
+                var textAreaValue = alignParagraph.value;
+                alignParagraph.outerHTML = '<p id="alignParagraph" class="container-fluid">' + textAreaValue + '</p>';
+                isTextArea = false;
+            }
+            else
+            {
+                var otherParagraphText = otherParagraph.textContent;
+                alignParagraph.outerHTML = '<textarea id="alignParagraph" class="container-fluid">' + otherParagraphText + '</textarea>';
+                isTextArea = true;
+            }
+
         }
+
         function readInput()
         {
             const nameInput = document.getElementById("name");
